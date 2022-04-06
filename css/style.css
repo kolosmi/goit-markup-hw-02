@@ -1,6 +1,8 @@
 body {
     background-color: #FFFFFF;
     color: #212121 ;
+    font-family: 'Roboto',
+    sans-serif;
 }
 ul {
     list-style: none;
@@ -26,7 +28,7 @@ h1 {
     font-size: 44px;
     line-height: 60px;
 }
-.main-section {
+.hero {
 background-color: #2F303A ;
 }
 /* цвет основного текста #212121 */
