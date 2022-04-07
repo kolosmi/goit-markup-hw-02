@@ -136,6 +136,7 @@ background: #2F303A;
   .button :hover,
 .button :focus {
 color: #2196F3;
+cursor: pointer
 }
  
 .example {
@@ -195,6 +196,7 @@ background-color: #2F303A;
     
     color: #FFFFFF;
 }
+
 .footer-mail{
     font-family: 'Roboto';
     font-style: normal;
