@@ -1,6 +1,20 @@
+/* цвет основного текста #212121 */
+/* цвет парагафа #757575 */
+/* акцент #2196F3 */
+/* цвет подвала  #2F303A */
+/* вторичный цвет фона #F5F4FA */
+
+:root{
+    --header-color: #FFFFFF;
+    --hero-footer-color: #2F303A;
+    --button-color: #2196F3;
+    --tites-color: #212121;
+    --text-color: #757575;
+
+}
 body {
-    background-color: #FFFFFF;
-    color: #212121 ;
+    background-color: var(--header-color);
+    color: var(--tites-color) ;
     font-family: 'Roboto',
     sans-serif;
 }
@@ -9,36 +23,63 @@ ul {
     list-style: none;
 }
 
+a {text-decoration: none;}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 /*header*/
 
 .header {
-background: #FFFFFF;
+background: var(--header-color);
 }
 .logo {
+    font-family: 'Raleway',sans-serif;
+    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     
-    color: #2196F3;
+    color: var(--header-color);
     }
-}
+ 
+
 .logoheader{
+    font-family: 'Raleway',sans-serif;
+    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;        
     letter-spacing: 0.03em;
     
-    color: #2196F3;
+    color: var(--button-color);
 }
-.header-item :hover,
-.header-item :focus {
-    color: #2196F3 ;
+
+.header-item {
+    color: var(--tites-color) ;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
          }
+.header-item :hover, 
+.header-item :focus { 
+   
+    color: var(--button-color);
+    background-color: var(--header-color);
+}
+
 .contacts-mail {
     font-weight: 500;
     font-size: 14px;
@@ -52,30 +93,39 @@ background: #FFFFFF;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--text-color) ;
 }
 
 /*first-page*/
 /*hero*/
 
 .hero {
-background: #2F303A;
+background: var(--hero-footer-color);
 }
 
 .hero-title {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto' sans-serif;
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    color: #FFFFFF;
+    color: var(--header-color);
 }
 .hero-button {
-    background-color: #2196F3;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    color: #FFFFFF;}
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.06em;
+background-color: var(--button-color);
+color: var(--header-color)
+}
+
+.hero-button:hover, :focus {
+ color: var (--header-color);
+
+}
 
     /*main*/
 
@@ -85,7 +135,7 @@ background: #2F303A;
         line-height: 1.14;
         letter-spacing: 0.03em;
               
-        color: #212121;
+        color: var(--tites-color);
     }
      
     p {
@@ -93,16 +143,16 @@ background: #2F303A;
         font-size: 14px;
         line-height: 1.71;              
         letter-spacing: 0.03em;        
-        color: #757575;
+        color: var(--text-color);
     }
-/*prodact*/
+/*product*/
 
-.title {
+.product-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;    
-    color: #212121;
+    color: var(--tites-color);
 }
 
 /*staff*/
@@ -111,66 +161,87 @@ background: #2F303A;
     background: #F5F4FA;
 }
 
- .name {
+.staff-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+letter-spacing: 0.03em;
+
+color: var(--hero-footer-color);
+}
+ .staff-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;      
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--tites-color);
  }
- .job {
+ .staff-job {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--text-color);
  }
 
  /*second-page*/
- body {
-     background-color: #FFFFFF;
- }
-
+ 
   /*main*/
 
-  .button :hover,
-.button :focus {
-color: #2196F3;
-cursor: pointer
+.navigation-button  {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;      
+   
+    letter-spacing: 0.03em;
+    
+    color: var(--tites-color);
 }
+
+.navigation-button:hover ,
+.navigation-button:focus{
+    color: var(--button-color);
+    background-color: var(--header-color);
+} 
  
-.example {
+.portfolio-example {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;        
     letter-spacing: 0.06em;
     
-    color: #212121;
+    color: var(--tites-color);
 }
-.option {
+.portfolio-option {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;    
     letter-spacing: 0.03em;
     
-    color: #757575;
+    color: var(--text-color);
 }
 
  /*footer*/
 
-footer {
-background-color: #2F303A;
+.footer {
+background-color: var(--hero-footer-color);
 }
 
 .logo {
+    font-family: 'Raleway',sans-serif;
+    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     
-    color: #2196F3;
+    color: var(--button-color) ;
 }
-.logoheader{
+.logoheader {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;   
@@ -178,13 +249,15 @@ background-color: #2F303A;
     
     color: #000000;
 }
-.logopart {
+.logo-part {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal; 
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;      
     letter-spacing: 0.03em;
     
-    color: #FFFFFF;
+    color: var(--header-color);
 }
 .footer-address{
     font-family: 'Roboto';
@@ -194,7 +267,7 @@ background-color: #2F303A;
     line-height: 1.71;       
     letter-spacing: 0.03em;
     
-    color: #FFFFFF;
+    color: var(--header-color);
 }
 
 .footer-mail{
@@ -219,9 +292,5 @@ background-color: #2F303A;
 }
 
 
-/* цвет основного текста #212121 */
-/* цвет парагафа #757575 */
-/* акцент #2196F3 */
-/* цвет подвала  #2F303A */
-/* вторичный цвет фона #F5F4FA */
+
 
