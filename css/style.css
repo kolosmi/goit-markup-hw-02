@@ -8,22 +8,25 @@
     --header-color: #FFFFFF;
     --hero-footer-color: #2F303A;
     --button-color: #2196F3;
-    --tites-color: #212121;
+    --titles-color: #212121;
     --text-color: #757575;
-
+    --btn-bcg-color: #F5F4FA;
 }
 body {
     background-color: var(--header-color);
-    color: var(--tites-color) ;
+    color: var(--titles-color) ;
     font-family: 'Roboto',
     sans-serif;
+    font-style: normal;
 }
 
-ul {
+.list {
     list-style: none;
 }
 
-a {text-decoration: none;}
+.link {
+    text-decoration: none;
+}
 
 .visually-hidden {
     position: absolute;
@@ -43,7 +46,9 @@ a {text-decoration: none;}
 .header {
 background: var(--header-color);
 }
-.logo {
+
+.logo,
+.logoheader {
     font-family: 'Raleway',sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -51,27 +56,25 @@ background: var(--header-color);
     line-height: 1.19;
     letter-spacing: 0.03em;
     
-    color: var(--header-color);
+    color: var(--button-color);
     }
  
 
-.logoheader{
-    font-family: 'Raleway',sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;        
-    letter-spacing: 0.03em;
-    
-    color: var(--button-color);
-}
 
-.header-item {
-    color: var(--tites-color) ;
+
+.current {
+color: var(--button-color)
+}
+    
+
+
+.header-item,
+.header-page {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    color: var(--titles-color)
          }
 .header-item :hover, 
 .header-item :focus { 
@@ -80,21 +83,17 @@ background: var(--header-color);
     background-color: var(--header-color);
 }
 
-.contacts-mail {
+
+
+.contacts-mail,
+.contacts-phone {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
+    color: var(--text-color);
 }
 
-.phone {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--text-color) ;
-}
 
 /*first-page*/
 /*hero*/
@@ -104,61 +103,69 @@ background: var(--hero-footer-color);
 }
 
 .hero-title {
-    font-family: 'Roboto' sans-serif;
-    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    color: var(--header-color);
-}
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--header-color)
+   }
+
 .hero-button {
-font-family: 'Roboto';
+font-family: inherit;
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.06em;
-background-color: var(--button-color);
-color: var(--header-color)
+background-color: var(--header-color);
+color: var(--button-color)
 }
 
-.hero-button:hover, :focus {
- color: var (--header-color);
-
+.hero-button :hover, :focus {
+ color: var(--header-color);
+ background-color: var(--button-color)
+}
+.hero-button {
+    cursor: pointer;
 }
 
     /*main*/
 
-    .features-item{
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-              
-        color: var(--tites-color);
+    .features-item-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--titles-color);
     }
      
-    p {
+    .features-item-title-text {
         font-weight: 400;
         font-size: 14px;
-        line-height: 1.71;              
-        letter-spacing: 0.03em;        
-        color: var(--text-color);
-    }
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        
+        color: var(--text-color);}
+
 /*product*/
 
 .product-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    letter-spacing: 0.03em;    
-    color: var(--tites-color);
+    letter-spacing: 0.03em;   
+    text-align: center;
+
+    color: var(--titles-color);
 }
 
 /*staff*/
 
 .staff {
-    background: #F5F4FA;
+    background: var(--btn-bcg-color);
 }
 
 .staff-title {
@@ -166,6 +173,7 @@ font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
 letter-spacing: 0.03em;
+text-align: center;
 
 color: var(--hero-footer-color);
 }
@@ -174,7 +182,7 @@ color: var(--hero-footer-color);
     font-size: 16px;
     line-height: 1.18;      
     letter-spacing: 0.03em;
-    color: var(--tites-color);
+    color: var(--titles-color);
  }
  .staff-job {
     font-weight: 400;
@@ -196,14 +204,17 @@ color: var(--hero-footer-color);
     line-height: 1.62;      
    
     letter-spacing: 0.03em;
-    
-    color: var(--tites-color);
+    background-color:var(--btn-bcg-color);
+    color: var(--titles-color);
 }
 
+.navigation-button {
+    cursor: pointer;
+}
 .navigation-button:hover ,
 .navigation-button:focus{
-    color: var(--button-color);
-    background-color: var(--header-color);
+    color: var(--header-color);
+    background-color: var(--button-color);
 } 
  
 .portfolio-example {
@@ -212,7 +223,7 @@ color: var(--hero-footer-color);
     line-height: 2;        
     letter-spacing: 0.06em;
     
-    color: var(--tites-color);
+    color: var(--titles-color);
 }
 .portfolio-option {
     font-weight: 400;
@@ -239,7 +250,7 @@ background-color: var(--hero-footer-color);
     
     color: var(--button-color) ;
 }
-.logoheader {
+.logo-header {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -249,7 +260,7 @@ background-color: var(--hero-footer-color);
     
     color: #000000;
 }
-.logo-part {
+.logo-footer {
     font-family: 'Raleway', sans-serif;
     font-style: normal; 
     font-weight: 700;
@@ -259,6 +270,8 @@ background-color: var(--hero-footer-color);
     
     color: var(--header-color);
 }
+
+
 .footer-address{
     font-family: 'Roboto';
     font-style: normal;
@@ -270,7 +283,8 @@ background-color: var(--hero-footer-color);
     color: var(--header-color);
 }
 
-.footer-mail{
+.footer-mail,
+.footer-phone {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -280,16 +294,7 @@ background-color: var(--hero-footer-color);
     
     color: rgba(255, 255, 255, 0.6);
 }
-.footer-phone{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;    
-    letter-spacing: 0.03em;
-    
-    color: rgba(255, 255, 255, 0.6);
-}
+
 
 
 
