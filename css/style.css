@@ -55,9 +55,7 @@ background: var(--header-color);
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    
-    color: var(--button-color);
-    }
+          }
  
 
 
@@ -96,8 +94,20 @@ color: var(--button-color)
     letter-spacing: 0.02em;
     color: var(--text-color);
 }
+.phone {
+    color: var(--text-color);
+}
+.phone :hover {
+    color: var(--button-color);
+}
 
+.mail {
+    color: var(--text-color);
+    }
 
+.mail :hover{
+color: var(--button-color);
+}
 /*first-page*/
 /*hero*/
 
@@ -286,7 +296,9 @@ background-color: var(--hero-footer-color);
     
     color: var(--header-color);
 }
-
+.footer-address :hover{
+    color: var(--button-color);
+}
 .footer-mail,
 .footer-phone {
     font-family: 'Roboto';
