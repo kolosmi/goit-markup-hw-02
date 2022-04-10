@@ -96,7 +96,8 @@ color: var(--button-color)
     letter-spacing: 0.02em;
     color: var(--text-color);
 }
- 
+
+
 /*first-page*/
 /*hero*/
 
@@ -120,14 +121,15 @@ font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.06em;
-background-color: var(--header-color);
-color: var(--button-color)
+background-color: var(--button-color);
+color: var(--header-color)
 }
 
-.hero-button :hover, :focus {
- color: var(--header-color);
- background-color: var(--button-color)
+.hero-button :hover{
+ color: var(--button-color);
+ background-color: var(--header-color)
 }
+
 .hero-button {
     cursor: pointer;
 }
