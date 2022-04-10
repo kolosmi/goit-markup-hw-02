@@ -97,10 +97,6 @@ color: var(--button-color)
     color: var(--text-color);
 }
  
-.contacts-mail :hover
-.contacts-mail :focus {
-    color: var(--button-color);
-}
 /*first-page*/
 /*hero*/
 
