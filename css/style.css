@@ -11,15 +11,18 @@
     --titles-color: #212121;
     --text-color: #757575;
     --btn-bcg-color: #F5F4FA;
+    --logo-header-color: #000000;
+    --footer-phone-color: rgba(255, 255, 255, 0.6);
 }
 body {
     background-color: var(--header-color);
     color: var(--titles-color) ;
     font-family: 'Roboto',
     sans-serif;
+    }
+.address {
     font-style: normal;
 }
-
 .list {
     list-style: none;
 }
@@ -68,9 +71,7 @@ background: var(--header-color);
     letter-spacing: 0.02em;
     color: var(--titles-color)
          }
-.current {
-    color: var(--button-color)
-}
+
 .header-item :hover, 
 .header-item :focus { 
    
@@ -78,7 +79,9 @@ background: var(--header-color);
     background-color: var(--header-color);
 }
 
-
+.current {
+    color: var(--button-color)
+}
 
 .contacts-mail,
 .contacts-phone {
@@ -117,6 +120,7 @@ background: var(--hero-footer-color);
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
+    text-transform: uppercase;
     color: var(--header-color)
    }
 
@@ -128,16 +132,13 @@ font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.06em;
 background-color: var(--button-color);
-color: var(--header-color)
+color: var(--header-color);
+cursor: pointer;
 }
 
 .hero-button :hover{
  color: var(--button-color);
  background-color: var(--header-color)
-}
-
-.hero-button {
-    cursor: pointer;
 }
 
     /*main*/
@@ -216,11 +217,10 @@ color: var(--hero-footer-color);
     letter-spacing: 0.03em;
     background-color:var(--btn-bcg-color);
     color: var(--titles-color);
-}
-
-.navigation-button {
     cursor: pointer;
 }
+
+
 .navigation-button:hover ,
 .navigation-button:focus{
     color: var(--header-color);
@@ -268,7 +268,7 @@ background-color: var(--hero-footer-color);
     line-height: 1.19;   
     letter-spacing: 0.03em;
     
-    color: #000000;
+    color: var(--logo-header-color);
 }
 .logo-footer {
     font-family: 'Raleway', sans-serif;
@@ -304,7 +304,7 @@ background-color: var(--hero-footer-color);
     line-height: 1.71;    
     letter-spacing: 0.03em;
     
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer-phone-color);
 }
 
 
