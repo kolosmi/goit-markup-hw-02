@@ -20,8 +20,14 @@ body {
     font-family: 'Roboto',
     sans-serif;
     }
-.address {
+address { 
+    font-family: 'Roboto';
     font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+       
 }
 .list {
     list-style: none;
@@ -282,28 +288,14 @@ background-color: var(--hero-footer-color);
 }
 
 
-.footer-address{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;       
-    letter-spacing: 0.03em;
-    
+.footer-address{        
     color: var(--header-color);
 }
 .footer-address :hover{
     color: var(--button-color);
 }
 .footer-mail,
-.footer-phone {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;    
-    letter-spacing: 0.03em;
-    
+.footer-phone {        
     color: var(--footer-phone-color);
 }
 
