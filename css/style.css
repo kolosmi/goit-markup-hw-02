@@ -57,13 +57,7 @@ background: var(--header-color);
     letter-spacing: 0.03em;
           }
  
-
-
-
-.current {
-color: var(--button-color)
-}
-    
+  
 
 
 .header-item,
@@ -74,7 +68,9 @@ color: var(--button-color)
     letter-spacing: 0.02em;
     color: var(--titles-color)
          }
-
+.current {
+    color: var(--button-color)
+}
 .header-item :hover, 
 .header-item :focus { 
    
